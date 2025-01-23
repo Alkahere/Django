@@ -19,6 +19,15 @@ This project simulates a distributed system with multiple databases using Django
 1. Insert Data into Databases (insert_data)
 The insert_data command is used to insert pre-defined data into the users, products, and orders databases concurrently.
 
+## Install Dependencies
+pip install -r requirements.txt
+
+## Make Migrations : 
+python manage.py makemigrations
+python manage.py migrate
+
+
+
 To insert the data, run the following command:
 ## python manage.py insert_data
 
@@ -32,7 +41,6 @@ After inserting the data, you can check the records in the respective databases 
 
 To check the data, run the following command:
 ## python manage.py check_data
-
 This command will:
 Fetch and print all records from the users , products , orders
 
